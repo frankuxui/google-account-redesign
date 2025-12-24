@@ -1,0 +1,110 @@
+---
+import "../styles/global.css";
+
+interface Props {
+  title: string;
+  description: string;
+}
+
+// Crear la URL canónica normalizada
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const { title, description } = Astro.props as Props;
+
+const keywords = [
+  "Frankuxui",
+  "Frank Esteban",
+  "Frank",
+  "Esteban",
+  "Frontend Developer",
+  "Diseñador UX/UI",
+  "Diseñador de interfaces",
+  "Desarrollador web",
+  "Diseñador web",
+  "Portafolio de diseño",
+  "Portafolio de desarrollo",
+  "Interfaces accesibles",
+  "Interfaces modernas",
+  "Experiencia de usuario",
+  "Diseño centrado en el usuario",
+];
+
+const logo = new URL("/og-logo.png", Astro.site).toString();
+const ogImage = new URL("/og-image.png", Astro.site).toString();
+---
+
+<!-- Global Metadata -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta
+  name="description"
+  content="Frank Esteban — Frontend Developer y Diseñador UX/UI con más de 8 años de experiencia creando interfaces intuitivas, accesibles y modernas. Disponible para nuevos proyectos."
+/>
+
+<link rel="icon" type="image/png" href="/favicon.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png" />
+<link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png" />
+<link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png" />
+<link rel="sitemap" href={new URL("sitemap-index.xml", Astro.site)} />
+<link rel="alternate" type="application/rss+xml" title={title} href={new URL("rss.xml", Astro.site)} />
+<meta name="generator" content={Astro.generator} />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+  rel="stylesheet"
+/>
+
+<!-- SEO Metadata -->
+<meta name="keywords" content={keywords.join(", ")} />
+<meta name="author" content="Frankuxui" />
+<meta name="application-name" content={title} />
+<meta name="theme-color" content="#ffffff" />
+<meta name="robots" content="index, follow" />
+
+<!-- Canonical URL -->
+<link rel="canonical" href={canonicalURL} />
+
+<!-- Primary Meta Tags -->
+<title>{title}</title>
+<meta name="title" content={title} />
+<meta name="description" content={description} />
+<meta name="google-site-verification" content="z8tMj3ewmn2Qaqw0muu5GLy04hn0qLXr0FpJHFkl8Uw" />
+
+<!-- Og / default -->
+<meta property="og:logo" content={logo} />
+<meta property="og:locale" content="es_ES" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:site_name" content={title} />
+<meta property="og:image" content={ogImage} />
+<meta property="og:image:alt" content={title} />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content={canonicalURL} />
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@frankuxui" />
+<meta name="twitter:creator" content="@frankuxui" />
+<meta property="twitter:domain" content="frankuxui.dev" />
+<meta property="twitter:url" content={canonicalURL} />
+<meta property="twitter:title" content={title} />
+<meta property="twitter:description" content={description} />
+<meta property="twitter:image" content={ogImage} />
+<meta property="twitter:image:alt" content={title} />

@@ -1,0 +1,64 @@
+---
+import HeaderSection from "@/components/HeaderSection.astro";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+---
+
+<BaseLayout>
+  <HeaderSection title="Seguridad e inicio de sesión" />
+  <div class="w-full mt-10">
+    <div class="p-6 w-full flex items-center justify-start gap-4 border rounded-2xl group border-border">
+      <span class="flex-none text-emerald-600">
+        <svg xmlns="http://www.w3.org/2000/svg" class="size-9" viewBox="0 0 24 24"
+          ><path
+            fill="currentColor"
+            d="M22 3.94L12 .44L2 3.94V12c0 4.127 2.534 7.012 4.896 8.803a19.8 19.8 0 0 0 4.65 2.595q.17.064.342.122l.112.04l.114-.04a14 14 0 0 0 .65-.244a19.7 19.7 0 0 0 4.34-2.473C19.467 19.012 22 16.127 22 12zM11.001 15.415L6.76 11.172l1.414-1.415l2.828 2.829l5.657-5.657l1.415 1.414z"
+          ></path></svg
+        >
+      </span>
+      <div class="grid gap-1">
+        <h3 class="text-base font-medium">Tu cuenta está protegida</h3>
+        <p>La Revisión de Seguridad ha comprobado tu cuenta y no ha encontrado ninguna acción recomendada</p>
+      </div>
+    </div>
+
+    <section class="grid gap-1 mt-6">
+      <h2 class="font-medium text-base">Actividad relacionada con la seguridad reciente</h2>
+      <p class="text-foreground/60">No ha habido ninguna alerta ni actividad relacionadas con la seguridad en los últimos 28 días.</p>
+    </section>
+
+    <section class="grid gap-1 mt-6">
+      <h2 class="font-medium text-base">Cómo inicias sesión en Google</h2>
+      <p class="text-foreground/60">Asegúrate de poder acceder siempre a tu cuenta de Google manteniendo al día esta información.</p>
+    </section>
+
+    <section class="w-full mt-4 grid gap-1">
+      <div class="p-6 w-full border rounded-2xl group border-border">
+        <div class="flex items-center justify-start gap-4">
+          <span class="size-14 rounded-full flex-none inline-flex items-center justify-center bg-foreground/2 transition-colors duration-500 group-hover:bg-background">
+            <svg xmlns="http://www.w3.org/2000/svg" class="size-8" viewBox="0 0 24 24"
+              ><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                ><path
+                  d="M18.709 3.495C16.817 2.554 14.5 2 12 2s-4.816.554-6.709 1.495c-.928.462-1.392.693-1.841 1.419S3 6.343 3 7.748v3.49c0 5.683 4.542 8.843 7.173 10.196c.734.377 1.1.566 1.827.566s1.093-.189 1.827-.566C16.457 20.08 21 16.92 21 11.237V7.748c0-1.405 0-2.108-.45-2.834s-.913-.957-1.841-1.419"
+                ></path><path d="M12 9v1m-1-.5a1 1 0 1 0 2 0a1 1 0 0 0-2 0"></path><path d="M12.75 14h-1.5l.75-3.5z"></path></g
+              ></svg
+            >
+          </span>
+          <div class="flex flex-1 items-start sm:items-center justify-between flex-col sm:flex-row sm:gap-4">
+            <span class="font-medium text-base">Verificación en dos pasos</span>
+            <div class="inline-flex items-center justify-center gap-2 pl-1 py-1 pr-2 rounded-full bg-emerald-500/20 text-emerald-600">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="flex-none" viewBox="0 0 24 24"
+                ><path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="M12 1.25C6.063 1.25 1.25 6.063 1.25 12S6.063 22.75 12 22.75S22.75 17.937 22.75 12S17.937 1.25 12 1.25M7.53 11.97a.75.75 0 0 0-1.06 1.06l3 3a.75.75 0 0 0 1.06 0l7-7a.75.75 0 0 0-1.06-1.06L10 14.44z"
+                  clip-rule="evenodd"></path></svg
+              >
+              <span class="font-medium text-xs">Activa desde: 26 mayo</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</BaseLayout>
+---

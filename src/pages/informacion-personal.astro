@@ -1,0 +1,232 @@
+---
+import HeaderSection from "@/components/HeaderSection.astro";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+---
+
+<BaseLayout>
+  <HeaderSection title="Información personal" subtitle="Gestiona los detalles que mejoran tu experiencia en Google y decide qué información pueden ver los demás." />
+
+  <section class="w-full mt-10 grid gap-1">
+    <article class="p-6 w-full border rounded-2xl group border-border transition-colors duration-500 hover:bg-foreground/2">
+      <div class="flex items-center justify-between">
+        <div class="flex items-center justify-start gap-4 flex-none">
+          <span class="size-14 rounded-full flex-none inline-flex items-center justify-center bg-foreground/2 transition-colors duration-500 group-hover:bg-background">
+            <svg xmlns="http://www.w3.org/2000/svg" class="size-8" viewBox="0 0 24 24"
+              ><g fill="none" stroke="currentColor" stroke-width="1.5"
+                ><circle cx="12" cy="13" r="3"></circle><path
+                  d="M9.778 21h4.444c3.121 0 4.682 0 5.803-.735a4.4 4.4 0 0 0 1.226-1.204c.749-1.1.749-2.633.749-5.697s0-4.597-.749-5.697a4.4 4.4 0 0 0-1.226-1.204c-.72-.473-1.622-.642-3.003-.702c-.659 0-1.226-.49-1.355-1.125A2.064 2.064 0 0 0 13.634 3h-3.268c-.988 0-1.839.685-2.033 1.636c-.129.635-.696 1.125-1.355 1.125c-1.38.06-2.282.23-3.003.702A4.4 4.4 0 0 0 2.75 7.667C2 8.767 2 10.299 2 13.364s0 4.596.749 5.697c.324.476.74.885 1.226 1.204C5.096 21 6.657 21 9.778 21Z"
+                ></path><path stroke-linecap="round" d="M19 10h-1"></path></g
+              ></svg
+            >
+          </span>
+          <span class="font-medium text-base">Imagen de perfil</span>
+        </div>
+        <img src="https://randomuser.me/api/portraits/women/24.jpg" alt="Imagen de perfil" class="size-16 rounded-full object-cover" />
+      </div>
+    </article>
+
+    <article class="p-6 w-full border rounded-2xl group border-border transition-colors duration-500 hover:bg-foreground/2">
+      <div class="flex items-center justify-between">
+        <div class="flex items-center justify-start gap-4 flex-none">
+          <span class="size-14 rounded-full flex-none inline-flex items-center justify-center bg-foreground/2 transition-colors duration-500 group-hover:bg-background">
+            <svg xmlns="http://www.w3.org/2000/svg" class="size-8" viewBox="0 0 24 24"
+              ><g fill="none" stroke="currentColor" stroke-width="1.5"
+                ><path
+                  stroke-linejoin="round"
+                  d="M14 3.5c3.771 0 5.657 0 6.828 1.245S22 7.993 22 12s0 6.01-1.172 7.255S17.771 20.5 14 20.5h-4c-3.771 0-5.657 0-6.828-1.245S2 16.007 2 12s0-6.01 1.172-7.255S6.229 3.5 10 3.5z"
+                ></path><path stroke-linecap="round" d="M5 15.5c1.609-2.137 5.354-2.254 7 0m-1.751-5.25a1.75 1.75 0 1 1-3.5 0a1.75 1.75 0 0 1 3.5 0ZM15 9.5h4m-4 4h2"></path></g
+              ></svg
+            >
+          </span>
+          <div class="grid">
+            <p class="font-medium text-base">Nombre</p>
+            <p class="text-sm text-muted-foreground">Frank Esteban Isdray Junco</p>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="p-6 w-full border rounded-2xl group border-border transition-colors duration-500 hover:bg-foreground/2">
+      <div class="flex items-center justify-between">
+        <div class="flex items-center justify-start gap-4 flex-none">
+          <span class="size-14 rounded-full flex-none inline-flex items-center justify-center bg-foreground/2 transition-colors duration-500 group-hover:bg-background">
+            <svg xmlns="http://www.w3.org/2000/svg" class="size-8" viewBox="0 0 24 24"
+              ><g fill="none" stroke="currentColor" stroke-width="1.5"
+                ><circle cx="12" cy="6" r="4"></circle><path d="M20 17.5c0 2.485 0 4.5-8 4.5s-8-2.015-8-4.5S7.582 13 12 13s8 2.015 8 4.5Z"></path></g
+              ></svg
+            >
+          </span>
+          <div class="grid">
+            <p class="font-medium text-base">Género</p>
+            <p class="text-sm text-muted-foreground">Masculino</p>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="p-6 w-full border rounded-2xl group border-border transition-colors duration-500 hover:bg-foreground/2">
+      <div class="flex items-center justify-between">
+        <div class="flex items-center justify-start gap-4 flex-none">
+          <span class="size-14 rounded-full flex-none inline-flex items-center justify-center bg-foreground/2 transition-colors duration-500 group-hover:bg-background">
+            <svg xmlns="http://www.w3.org/2000/svg" class="size-8" viewBox="0 0 24 24"
+              ><g fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="1.5"
+                ><path stroke-linecap="round" d="m7 8.5l2.942 1.74c1.715 1.014 2.4 1.014 4.116 0L17 8.5"></path><path
+                  d="M2.016 13.476c.065 3.065.098 4.598 1.229 5.733c1.131 1.136 2.705 1.175 5.854 1.254c1.94.05 3.862.05 5.802 0c3.149-.079 4.723-.118 5.854-1.254c1.131-1.135 1.164-2.668 1.23-5.733c.02-.986.02-1.966 0-2.952c-.066-3.065-.099-4.598-1.23-5.733c-1.131-1.136-2.705-1.175-5.854-1.254a115 115 0 0 0-5.802 0c-3.149.079-4.723.118-5.854 1.254c-1.131 1.135-1.164 2.668-1.23 5.733a69 69 0 0 0 0 2.952Z"
+                ></path></g
+              ></svg
+            >
+          </span>
+          <div class="grid">
+            <p class="font-medium text-base">Correo electrónico</p>
+            <p class="text-sm text-muted-foreground">frankuxui.dev@gmail.com</p>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="p-6 w-full border rounded-2xl group border-border transition-colors duration-500 hover:bg-foreground/2">
+      <div class="flex items-center justify-between">
+        <div class="flex items-center justify-start gap-4 flex-none">
+          <span class="size-14 rounded-full flex-none inline-flex items-center justify-center bg-foreground/2 transition-colors duration-500 group-hover:bg-background">
+            <svg xmlns="http://www.w3.org/2000/svg" class="size-8" viewBox="0 0 24 24"
+              ><path
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.5"
+                d="M15.6 14.522c-2.395 2.52-8.504-3.534-6.1-6.064c1.468-1.545-.19-3.31-1.108-4.609c-1.723-2.435-5.504.927-5.39 3.066c.363 6.746 7.66 14.74 14.726 14.042c2.21-.218 4.75-4.21 2.215-5.669c-1.268-.73-3.009-2.17-4.343-.767"
+              ></path></svg
+            >
+          </span>
+          <div class="grid">
+            <p class="font-medium text-base">Teléfono</p>
+            <p class="text-sm text-muted-foreground">+34 123 456 789</p>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="p-6 w-full border rounded-2xl group border-border transition-colors duration-500 hover:bg-foreground/2">
+      <div class="flex items-center justify-between">
+        <div class="flex items-center justify-start gap-4 flex-none">
+          <span class="size-14 rounded-full flex-none inline-flex items-center justify-center bg-foreground/2 transition-colors duration-500 group-hover:bg-background">
+            <svg xmlns="http://www.w3.org/2000/svg" class="size-8" viewBox="0 0 24 24"
+              ><g fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="1.5"
+                ><path d="M13.5 4.5a1.5 1.5 0 0 1-3 0C10.5 3.672 12 2 12 2s1.5 1.672 1.5 2.5Z"></path><path stroke-linecap="round" d="M12 6v3"></path><path
+                  d="M17.667 14c1.564 0 2.833-1.12 2.833-2.5S19.232 9 17.667 9H6.333C4.77 9 3.5 10.12 3.5 11.5S4.769 14 6.333 14c1.371 0 2.571-.859 2.834-2c.262 1.141 1.462 2 2.833 2c1.37 0 2.57-.859 2.833-2c.263 1.141 1.463 2 2.834 2Z"
+                ></path><path
+                  stroke-linecap="round"
+                  d="m5 14l.52 2.58c.525 2.597.788 3.895 1.676 4.658c.889.762 2.14.762 4.643.762h.322c2.503 0 3.754 0 4.643-.762c.889-.763 1.15-2.061 1.675-4.658L19 14"></path></g
+              ></svg
+            >
+          </span>
+          <div class="grid">
+            <p class="font-medium text-base">Fecha de nacimiento</p>
+            <p class="text-sm text-muted-foreground">1 de enero de 1990</p>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="p-6 w-full border rounded-2xl group border-border transition-colors duration-500 hover:bg-foreground/2">
+      <div class="flex items-center justify-between">
+        <div class="flex items-center justify-start gap-4 flex-none">
+          <span class="size-14 rounded-full flex-none inline-flex items-center justify-center bg-foreground/2 transition-colors duration-500 group-hover:bg-background">
+            <svg xmlns="http://www.w3.org/2000/svg" class="size-8" viewBox="0 0 24 24"
+              ><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                ><path d="M2 12c0 5.523 4.477 10 10 10s10-4.477 10-10S17.523 2 12 2S2 6.477 2 12"></path><path
+                  d="M13 2.05S16 6 16 12s-3 9.95-3 9.95m-2 0S8 18 8 12s3-9.95 3-9.95M2.63 15.5h18.74m-18.74-7h18.74"></path></g
+              ></svg
+            >
+          </span>
+          <div class="grid">
+            <p class="font-medium text-base">
+              Idioma
+              <p class="text-sm text-muted-foreground">Español (España)</p>
+            </p>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="p-6 w-full border rounded-2xl group border-border transition-colors duration-500 hover:bg-foreground/2">
+      <div class="flex items-center justify-between">
+        <div class="flex items-center justify-start gap-4 flex-none">
+          <span class="size-14 rounded-full flex-none inline-flex items-center justify-center bg-foreground/2 transition-colors duration-500 group-hover:bg-background">
+            <svg xmlns="http://www.w3.org/2000/svg" class="size-8" viewBox="0 0 24 24"
+              ><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                ><path d="m22 10.5l-9.117-7.678a1.37 1.37 0 0 0-1.765 0L2 10.5"></path><path
+                  d="M20.5 5v10.5c0 2.828 0 4.243-.879 5.121c-.878.879-2.293.879-5.121.879h-5c-2.828 0-4.243 0-5.121-.879C3.5 19.743 3.5 18.328 3.5 15.5v-6"></path><path
+                  d="M15 21.5v-5c0-1.414 0-2.121-.44-2.56c-.439-.44-1.146-.44-2.56-.44s-2.121 0-2.56.44C9 14.378 9 15.085 9 16.5v5"></path></g
+              ></svg
+            >
+          </span>
+          <div class="grid">
+            <p class="font-medium text-base">
+              Dirección de casa
+              <p class="text-sm text-muted-foreground">Via Aurelia, 17, Salou, España</p>
+            </p>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="p-6 w-full border rounded-2xl group border-border transition-colors duration-500 hover:bg-foreground/2">
+      <div class="flex items-center justify-between">
+        <div class="flex items-center justify-start gap-4 flex-none">
+          <span class="size-14 rounded-full flex-none inline-flex items-center justify-center bg-foreground/2 transition-colors duration-500 group-hover:bg-background">
+            <svg xmlns="http://www.w3.org/2000/svg" class="size-8" viewBox="0 0 24 24"
+              ><g fill="none" stroke="currentColor" stroke-width="1.5"
+                ><path stroke-linejoin="round" d="m16 10l2.15.645c1.373.412 2.06.618 2.455 1.15c.395.53.395 1.248.395 2.681V22"></path><path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8 9h3m-3 4h3"></path><path stroke-linejoin="round" d="M12 22v-3c0-.943 0-1.414-.293-1.707S10.943 17 10 17H9c-.943 0-1.414 0-1.707.293S7 18.057 7 19v3"
+                ></path><path stroke-linecap="round" d="M2 22h20"></path><path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3 22V6.717c0-2.51 0-3.766.791-4.389s1.956-.284 4.287.392l5 1.451c1.406.408 2.109.612 2.515 1.169C16 5.896 16 6.653 16 8.169V22"></path></g
+              ></svg
+            >
+          </span>
+          <div class="grid">
+            <p class="font-medium text-base">
+              Dirección de trabajo
+              <p class="text-sm text-muted-foreground">Sin configurar</p>
+            </p>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="p-6 w-full border rounded-2xl group border-border transition-colors duration-500 hover:bg-foreground/2">
+      <div class="flex items-center justify-between">
+        <div class="flex items-center justify-start gap-4 flex-none">
+          <span class="size-14 rounded-full flex-none inline-flex items-center justify-center bg-foreground/2 transition-colors duration-500 group-hover:bg-background">
+            <svg xmlns="http://www.w3.org/2000/svg" class="size-8" viewBox="0 0 24 24"
+              ><g fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="1.5"
+                ><path
+                  d="M18.83 14.254c.298-.323.447-.484.605-.578a1.24 1.24 0 0 1 1.241-.02c.161.09.315.247.622.561s.46.47.548.635c.212.397.205.878-.018 1.268c-.092.162-.25.314-.566.619L17.5 20.362c-.599.577-.898.865-1.273 1.012c-.374.146-.786.135-1.609.113l-.112-.002c-.25-.007-.376-.01-.449-.093c-.072-.083-.062-.21-.043-.465l.011-.14c.056-.718.084-1.077.224-1.4s.383-.585.867-1.11z"
+                ></path><path
+                  stroke-linecap="round"
+                  d="M22 10.5v-.783c0-1.94 0-2.909-.586-3.512c-.586-.602-1.528-.602-3.414-.602h-2.079c-.917 0-.925-.002-1.75-.415L10.84 3.521c-1.391-.696-2.087-1.044-2.828-1.02S6.6 2.918 5.253 3.704l-1.227.716c-.989.577-1.483.866-1.754 1.346C2 6.246 2 6.83 2 7.999v8.217c0 1.535 0 2.303.342 2.73c.228.285.547.476.9.54c.53.095 1.18-.284 2.478-1.042c.882-.515 1.73-1.05 2.785-.905c.884.122 1.705.68 2.495 1.075"
+                ></path><path d="M8 2.5v15"></path><path stroke-linecap="round" d="M15 5.5v8"></path></g
+              ></svg
+            >
+          </span>
+          <div class="grid">
+            <p class="font-medium text-base">
+              Otras direcciones
+              <p class="text-sm text-muted-foreground">Sin configurar</p>
+            </p>
+          </div>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <div class="mt-8">
+    <button class="inline-flex flex-none items-center font-medium justify-center text-sm px-6 rounded-full h-10 bg-violet-600 text-white"> Buscar en la cuenta de Google </button>
+    <button class="inline-flex flex-none items-center font-medium justify-center text-sm px-6 rounded-full h-10 border border-violet-600 text-violet-600"> Obtener ayuda </button>
+  </div>
+</BaseLayout>
