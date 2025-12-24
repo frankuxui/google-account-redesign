@@ -8,5 +8,5 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()]
   },
-  site: "http://localhost:4321"
+  site: "https://google-account-redesign.vercel.app"
 });
