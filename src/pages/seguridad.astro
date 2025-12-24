@@ -21,17 +21,17 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
       </div>
     </div>
 
-    <section class="grid gap-1 mt-6">
+    <section class="grid gap-1 mt-10">
       <h2 class="font-medium text-base">Actividad relacionada con la seguridad reciente</h2>
       <p class="text-foreground/60">No ha habido ninguna alerta ni actividad relacionadas con la seguridad en los últimos 28 días.</p>
     </section>
 
-    <section class="grid gap-1 mt-6">
+    <section class="grid gap-1 mt-10">
       <h2 class="font-medium text-base">Cómo inicias sesión en Google</h2>
       <p class="text-foreground/60">Asegúrate de poder acceder siempre a tu cuenta de Google manteniendo al día esta información.</p>
     </section>
 
-    <section class="w-full mt-4 grid gap-1">
+    <section class="w-full mt-10 grid gap-1">
       <div class="p-6 w-full border rounded-2xl group border-border">
         <div class="flex items-center justify-start gap-4">
           <span class="size-14 rounded-full flex-none inline-flex items-center justify-center bg-foreground/2 transition-colors duration-500 group-hover:bg-background">
@@ -56,6 +56,441 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
               <span class="font-medium text-xs">Activa desde: 26 mayo</span>
             </div>
           </div>
+        </div>
+      </div>
+
+      <div class="p-6 w-full border rounded-2xl group border-border transition-colors duration-500 hover:bg-foreground/5">
+        <div class="flex items-center justify-start gap-4">
+          <span class="size-14 rounded-full flex-none inline-flex items-center justify-center bg-foreground/2 transition-colors duration-500 group-hover:bg-background">
+            <svg xmlns="http://www.w3.org/2000/svg" class="size-8" viewBox="0 0 24 24"
+              ><g fill="none" stroke="currentColor" stroke-width="1.5"
+                ><path
+                  stroke-linejoin="round"
+                  d="M15.68 14.587c3.49 0 6.32-2.818 6.32-6.294S19.17 2 15.68 2S9.363 4.818 9.363 8.293c0 1.61.734 2.781.734 2.781l-7.642 7.61c-.343.342-.823 1.23 0 2.05l.882.878c.343.293 1.205.703 1.91 0l1.03-1.024c1.028 1.024 2.204.439 2.645-.147c.734-1.024-.147-2.049-.147-2.049l.294-.293c1.41 1.406 2.645.586 3.086 0c.735-1.024 0-2.049 0-2.049c-.294-.585-.882-.585-.147-1.317l.882-.878c.705.585 2.155.732 2.792.732Z"
+                ></path><path d="M17.885 8.294a2.2 2.2 0 0 1-2.204 2.195a2.2 2.2 0 0 1-2.204-2.195a2.2 2.2 0 0 1 2.204-2.196a2.2 2.2 0 0 1 2.204 2.196Z"></path></g
+              ></svg
+            >
+          </span>
+          <div class="flex flex-1 items-start flex-col">
+            <span class="font-medium text-base">Llaves de acceso y llaves de seguridad</span>
+            <p class="text-foreground/70">3 llaves de seguridad registradas</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="p-6 w-full border rounded-2xl group border-border transition-colors duration-500 hover:bg-foreground/5">
+        <div class="flex items-center justify-start gap-4">
+          <span class="size-14 rounded-full flex-none inline-flex items-center justify-center bg-foreground/2 transition-colors duration-500 group-hover:bg-background">
+            <svg xmlns="http://www.w3.org/2000/svg" class="size-8" viewBox="0 0 24 24"
+              ><g fill="none" stroke="currentColor" stroke-width="1.5"
+                ><path
+                  d="M2 12c0-3.771 0-5.657 1.172-6.828S6.229 4 10 4h4c3.771 0 5.657 0 6.828 1.172S22 8.229 22 12s0 5.657-1.172 6.828S17.771 20 14 20h-4c-3.771 0-5.657 0-6.828-1.172S2 15.771 2 12Z"
+                ></path><path stroke-linecap="round" d="M12 10v4m-1.732-3l3.464 2m0-2l-3.464 2m-3.535-3v4M5 11l3.464 2m0-2L5 13m12.268-3v4m-1.732-3L19 13m0-2l-3.465 2"></path></g
+              ></svg
+            >
+          </span>
+          <div class="flex flex-1 items-start flex-col">
+            <span class="font-medium text-base">Contraseñas</span>
+            <p class="text-foreground/70">Ultima comprobación: hace 2 días</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="p-6 w-full border rounded-2xl group border-border transition-colors duration-500 hover:bg-foreground/5">
+        <div class="flex items-center justify-start gap-4">
+          <span class="size-14 rounded-full flex-none inline-flex items-center justify-center bg-foreground/2 transition-colors duration-500 group-hover:bg-background">
+            <svg xmlns="http://www.w3.org/2000/svg" class="size-8" viewBox="0 0 24 24"
+              ><path
+                fill="currentColor"
+                d="M3 7q-.425 0-.712-.288T2 6V3q0-.425.288-.712T3 2h3q.425 0 .713.288T7 3t-.288.713T6 4H4v2q0 .425-.288.713T3 7m0 15q-.425 0-.712-.288T2 21v-3q0-.425.288-.712T3 17t.713.288T4 18v2h2q.425 0 .713.288T7 21t-.288.713T6 22zm15 0q-.425 0-.712-.288T17 21t.288-.712T18 20h2v-2q0-.425.288-.712T21 17t.713.288T22 18v3q0 .425-.288.713T21 22zm3-15q-.425 0-.712-.288T20 6V4h-2q-.425 0-.712-.288T17 3t.288-.712T18 2h3q.425 0 .713.288T22 3v3q0 .425-.288.713T21 7m-3.5 12v-1.5H19V19zm0-3v-1.5H19V16zM16 17.5V16h1.5v1.5zM14.5 19v-1.5H16V19zM13 17.5V16h1.5v1.5zm3-3V13h1.5v1.5zM14.5 16v-1.5H16V16zM13 14.5V13h1.5v1.5zm1-3.5q-.425 0-.712-.288T13 10V6q0-.425.288-.712T14 5h4q.425 0 .713.288T19 6v4q0 .425-.288.713T18 11zm-8 8q-.425 0-.712-.288T5 18v-4q0-.425.288-.712T6 13h4q.425 0 .713.288T11 14v4q0 .425-.288.713T10 19zm0-8q-.425 0-.712-.288T5 10V6q0-.425.288-.712T6 5h4q.425 0 .713.288T11 6v4q0 .425-.288.713T10 11zm.5 6.5h3v-3h-3zm0-8h3v-3h-3zm8 0h3v-3h-3z"
+              ></path></svg
+            >
+          </span>
+          <div class="flex flex-1 items-start flex-col">
+            <span class="font-medium text-base">Authenticator</span>
+            <p class="text-foreground/70">Añadido el 15 de marzo de 2023</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="p-6 w-full border rounded-2xl group border-border transition-colors duration-500 hover:bg-foreground/5">
+        <div class="flex items-center justify-start gap-4">
+          <span class="size-14 rounded-full flex-none inline-flex items-center justify-center bg-foreground/2 transition-colors duration-500 group-hover:bg-background">
+            <svg xmlns="http://www.w3.org/2000/svg" class="size-8" viewBox="0 0 24 24"
+              ><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                ><path d="M16.184 2.75H7.816c-.998 0-1.808.833-1.808 1.86v14.78c0 1.027.81 1.86 1.808 1.86h8.368c.998 0 1.808-.833 1.808-1.86V4.61c0-1.027-.81-1.86-1.808-1.86"
+                ></path><path d="M12 18.773a.52.52 0 1 0 0-1.038a.52.52 0 0 0 0 1.038M10.003 5.272h3.994"></path></g
+              ></svg
+            >
+          </span>
+          <div class="flex flex-1 items-start flex-col">
+            <span class="font-medium text-base">Notificación de Google</span>
+            <p class="text-foreground/70">3 dispositivos registrados</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="p-6 w-full border rounded-2xl group border-border transition-colors duration-500 hover:bg-foreground/5">
+        <div class="flex items-center justify-start gap-4">
+          <span class="size-14 rounded-full flex-none inline-flex items-center justify-center bg-foreground/2 transition-colors duration-500 group-hover:bg-background">
+            <svg xmlns="http://www.w3.org/2000/svg" class="size-8" viewBox="0 0 24 24"
+              ><g fill="none" stroke="currentColor" stroke-width="1.5"
+                ><path
+                  stroke-linecap="round"
+                  d="M6.009 8c.036-2.48.22-3.885 1.163-4.828C8.343 2 10.229 2 14 2s5.657 0 6.828 1.172S22 6.229 22 10v4c0 3.771 0 5.657-1.172 6.828S17.772 22 14 22h-2"></path><path
+                  d="M2 14.5c0-1.405 0-2.107.337-2.611a2 2 0 0 1 .552-.552C3.393 11 4.096 11 5.5 11s2.107 0 2.611.337a2 2 0 0 1 .552.552C9 12.393 9 13.096 9 14.5v4c0 1.404 0 2.107-.337 2.611a2 2 0 0 1-.552.552C7.607 22 6.904 22 5.5 22s-2.107 0-2.611-.337a2 2 0 0 1-.552-.552C2 20.607 2 19.904 2 18.5z"
+                ></path><path stroke-linecap="round" d="M17 19h-5"></path></g
+              ></svg
+            >
+          </span>
+          <div class="flex flex-1 items-start flex-col">
+            <span class="font-medium text-base">Teléfonos de verbificación en dos pasos</span>
+            <p class="text-foreground/70">2 números de teléfono registrados</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="p-6 w-full border rounded-2xl group border-border transition-colors duration-500 hover:bg-foreground/5">
+        <div class="flex items-center justify-start gap-4">
+          <span class="size-14 rounded-full flex-none inline-flex items-center justify-center bg-foreground/2 transition-colors duration-500 group-hover:bg-background">
+            <svg xmlns="http://www.w3.org/2000/svg" class="size-8" viewBox="0 0 24 24"
+              ><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"
+                ><path
+                  d="M18 13.497v1.5c0 3.3 0 4.95-1.025 5.975S14.3 21.997 11 21.997s-4.95 0-5.975-1.025S4 18.297 4 14.997v-6c0-3.3 0-4.95 1.025-5.974c.857-.857 2.149-.998 4.475-1.021"
+                ></path><path stroke-linejoin="round" d="M20 5.502v-2.5c-2 0-3.5-1-3.5-1s-1.5 1-3.5 1v2.5c0 3.5 3.5 4.5 3.5 4.5s3.5-1 3.5-4.5M10 18.998h2"></path></g
+              ></svg
+            >
+          </span>
+          <div class="flex flex-1 items-start flex-col">
+            <span class="font-medium text-base">Teléfonos de recuperación</span>
+            <p class="text-foreground/70">+32 123 456 789</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="p-6 w-full border rounded-2xl group border-border transition-colors duration-500 hover:bg-foreground/5">
+        <div class="flex items-center justify-start gap-4">
+          <span class="size-14 rounded-full flex-none inline-flex items-center justify-center bg-foreground/2 transition-colors duration-500 group-hover:bg-background">
+            <svg xmlns="http://www.w3.org/2000/svg" class="size-8" viewBox="0 0 24 24"
+              ><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                ><path
+                  d="M22 12.5c0-.491-.005-1.483-.016-1.976c-.065-3.065-.098-4.598-1.229-5.733c-1.131-1.136-2.705-1.175-5.854-1.254a115 115 0 0 0-5.802 0c-3.149.079-4.723.118-5.854 1.254c-1.131 1.135-1.164 2.668-1.23 5.733a69 69 0 0 0 0 2.952c.066 3.065.099 4.598 1.23 5.733c1.131 1.136 2.705 1.175 5.854 1.254q1.204.03 2.401.036"
+                ></path><path d="m7 8.5l2.942 1.74c1.715 1.014 2.4 1.014 4.116 0L17 8.5m-3 9h8m-8 0c0-.7 1.994-2.008 2.5-2.5M14 17.5c0 .7 1.994 2.009 2.5 2.5"></path></g
+              ></svg
+            >
+          </span>
+          <div class="flex flex-1 items-start flex-col">
+            <span class="font-medium text-base">Correo de recuperación</span>
+            <p class="text-foreground/70">test@test.com</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="p-6 w-full border rounded-2xl group border-border transition-colors duration-500 hover:bg-foreground/5">
+        <div class="flex items-center justify-start gap-4">
+          <span class="size-14 rounded-full flex-none inline-flex items-center justify-center bg-foreground/2 transition-colors duration-500 group-hover:bg-background">
+            <svg xmlns="http://www.w3.org/2000/svg" class="size-8" viewBox="0 0 24 24"
+              ><g fill="none"
+                ><path
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  d="M2 12c0-3.771 0-5.657 1.172-6.828S6.229 4 10 4h4c3.771 0 5.657 0 6.828 1.172S22 8.229 22 12s0 5.657-1.172 6.828S17.771 20 14 20h-4c-3.771 0-5.657 0-6.828-1.172S2 15.771 2 12Z"
+                ></path><path fill="currentColor" d="M9 12a1 1 0 1 1-2 0a1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0a1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0a1 1 0 0 1 2 0"></path></g
+              ></svg
+            >
+          </span>
+          <div class="flex flex-1 items-start flex-col">
+            <span class="font-medium text-base">Códigos de verificación alternativos</span>
+            <p class="text-foreground/70">16 códigos disponibles</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="grid gap-3 mt-6 place-items-start">
+      <h2 class="font-medium text-sm">Puedes añadir más opciones de inicio de sesión</h2>
+      <button
+        class="inline-flex items-center justify-start text-left sm:text-center sm:justify-center gap-4 px-6 py-2 font-medium transition-colors duration-500 border cursor-pointer rounded-full bg-blue-500/10 hover:bg-background border-blue-500/10 text-sm"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" class="size-8 sm:size-5" viewBox="0 0 24 24"
+          ><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            ><path d="M12 11.543A2.17 2.17 0 1 0 12 7.2a2.17 2.17 0 0 0 0 4.342m0 .001v3.256"></path><path
+              d="M20.672 11.89V6.61a1.93 1.93 0 0 0-1.32-1.831L14.438 3.14a7.8 7.8 0 0 0-4.876 0L4.648 4.778a1.93 1.93 0 0 0-1.32 1.83v5.28a7.71 7.71 0 0 0 3.603 6.524l4.048 2.544a1.93 1.93 0 0 0 2.042 0l4.047-2.544a7.71 7.71 0 0 0 3.604-6.523"
+            ></path></g
+          ></svg
+        >
+        <span>Teléfonos alternativos para la verificación en dos pasos</span>
+      </button>
+    </section>
+
+    <section class="grid gap-1 mt-6 place-items-start">
+      <h2 class="text-base font-medium">Tus dispositivos</h2>
+      <p class="text-foreground/60">Gestiona todos los dispositivos que han accedido a tu cuenta de Google.</p>
+    </section>
+
+    <section class="w-full mt-4 grid gap-1">
+      <div class="p-6 w-full border rounded-2xl group border-border transition-colors duration-500 hover:bg-foreground/5">
+        <div class="flex items-center justify-start gap-4">
+          <span class="size-14 rounded-full flex-none inline-flex items-center justify-center bg-foreground/2 transition-colors duration-500 group-hover:bg-background">
+            <svg xmlns="http://www.w3.org/2000/svg" class="size-8" version="1.1" id="Capa_1" viewBox="0 0 58 58" xml:space="preserve">
+              <rect y="1" style="fill:#AFB6BB;" width="58" height="40"></rect>
+              <path
+                style="fill:#38454F;"
+                d="M32,49.073v3.06C32,52.611,31.611,53,31.132,53h-4.264C26.389,53,26,52.611,26,52.132v-3.06  C18.599,49.424,13,51.047,13,53c0,2.209,7.163,4,16,4s16-1.791,16-4C45,51.047,39.401,49.424,32,49.073z"
+              ></path>
+              <path style="fill:#546A79;" d="M31.132,53h-4.264C26.389,53,26,52.611,26,52.132V41h6v11.132C32,52.611,31.611,53,31.132,53z"></path>
+              <rect y="5" style="fill:#546A79;" width="58" height="32"></rect>
+              <g>
+                <path
+                  style="fill:#839CAA;"
+                  d="M4,14c0.256,0,0.512-0.098,0.707-0.293l4-4c0.391-0.391,0.391-1.023,0-1.414s-1.023-0.391-1.414,0   l-4,4c-0.391,0.391-0.391,1.023,0,1.414C3.488,13.902,3.744,14,4,14z"
+                ></path>
+                <path
+                  style="fill:#839CAA;"
+                  d="M4,19c0.256,0,0.512-0.098,0.707-0.293l2-2c0.391-0.391,0.391-1.023,0-1.414s-1.023-0.391-1.414,0   l-2,2c-0.391,0.391-0.391,1.023,0,1.414C3.488,18.902,3.744,19,4,19z"
+                ></path>
+                <path
+                  style="fill:#839CAA;"
+                  d="M7.29,13.29C7.11,13.48,7,13.74,7,14c0,0.27,0.11,0.52,0.29,0.71C7.48,14.89,7.73,15,8,15   c0.26,0,0.52-0.11,0.71-0.29C8.89,14.52,9,14.26,9,14c0-0.26-0.11-0.52-0.29-0.71C8.33,12.92,7.66,12.92,7.29,13.29z"
+                ></path>
+                <path
+                  style="fill:#839CAA;"
+                  d="M9.293,12.707C9.488,12.902,9.744,13,10,13s0.512-0.098,0.707-0.293l3-3   c0.391-0.391,0.391-1.023,0-1.414s-1.023-0.391-1.414,0l-3,3C8.902,11.684,8.902,12.316,9.293,12.707z"
+                ></path>
+                <path
+                  style="fill:#839CAA;"
+                  d="M12.293,13.293l-9,9c-0.391,0.391-0.391,1.023,0,1.414C3.488,23.902,3.744,24,4,24   s0.512-0.098,0.707-0.293l9-9c0.391-0.391,0.391-1.023,0-1.414S12.684,12.902,12.293,13.293z"
+                ></path>
+                <path
+                  style="fill:#839CAA;"
+                  d="M14.29,11.29C14.11,11.48,14,11.74,14,12c0,0.26,0.11,0.52,0.29,0.71C14.48,12.89,14.74,13,15,13   c0.26,0,0.52-0.11,0.71-0.29C15.89,12.52,16,12.26,16,12c0-0.27-0.11-0.52-0.29-0.71C15.34,10.92,14.66,10.92,14.29,11.29z"
+                ></path>
+                <path
+                  style="fill:#839CAA;"
+                  d="M18.707,8.293c-0.391-0.391-1.023-0.391-1.414,0l-1,1c-0.391,0.391-0.391,1.023,0,1.414   C16.488,10.902,16.744,11,17,11s0.512-0.098,0.707-0.293l1-1C19.098,9.316,19.098,8.684,18.707,8.293z"
+                ></path>
+              </g>
+            </svg>
+          </span>
+          <div class="flex flex-1 items-start flex-col">
+            <span class="font-medium text-base">5 sesiones en uno o varios ordenadores</span>
+            <p class="text-foreground/70">Windows, Hace 2 días</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="p-6 w-full border rounded-2xl group border-border transition-colors duration-500 hover:bg-foreground/5">
+        <div class="flex items-center justify-start gap-4">
+          <span class="size-14 rounded-full flex-none inline-flex items-center justify-center bg-foreground/2 transition-colors duration-500 group-hover:bg-background">
+            <svg xmlns="http://www.w3.org/2000/svg" class="size-8" version="1.1" id="Capa_1" viewBox="0 0 58 58" xml:space="preserve">
+              <path
+                style="fill:#E7ECED;"
+                d="M44.053,58H15.947C14.872,58,14,57.128,14,56.053V1.947C14,0.872,14.872,0,15.947,0h28.106  C45.128,0,46,0.872,46,1.947v54.106C46,57.128,45.128,58,44.053,58z"
+              ></path>
+              <rect x="17" y="6" style="fill:#38454F;" width="26" height="44"></rect>
+              <g>
+                <path
+                  style="fill:#546A79;"
+                  d="M20,14c0.256,0,0.512-0.098,0.707-0.293l4-4c0.391-0.391,0.391-1.023,0-1.414s-1.023-0.391-1.414,0   l-4,4c-0.391,0.391-0.391,1.023,0,1.414C19.488,13.902,19.744,14,20,14z"
+                ></path>
+                <path
+                  style="fill:#546A79;"
+                  d="M20,19c0.256,0,0.512-0.098,0.707-0.293l2-2c0.391-0.391,0.391-1.023,0-1.414s-1.023-0.391-1.414,0   l-2,2c-0.391,0.391-0.391,1.023,0,1.414C19.488,18.902,19.744,19,20,19z"
+                ></path>
+                <path
+                  style="fill:#546A79;"
+                  d="M23.29,13.29C23.11,13.479,23,13.74,23,14s0.11,0.52,0.29,0.71C23.48,14.89,23.74,15,24,15   c0.26,0,0.52-0.11,0.71-0.29C24.89,14.52,25,14.26,25,14c0-0.271-0.11-0.521-0.29-0.71C24.34,12.92,23.67,12.92,23.29,13.29z"
+                ></path>
+                <path
+                  style="fill:#546A79;"
+                  d="M25.293,12.707C25.488,12.902,25.744,13,26,13s0.512-0.098,0.707-0.293l3-3   c0.391-0.391,0.391-1.023,0-1.414s-1.023-0.391-1.414,0l-3,3C24.902,11.684,24.902,12.316,25.293,12.707z"
+                ></path>
+                <path
+                  style="fill:#546A79;"
+                  d="M28.293,13.293l-9,9c-0.391,0.391-0.391,1.023,0,1.414C19.488,23.902,19.744,24,20,24   s0.512-0.098,0.707-0.293l9-9c0.391-0.391,0.391-1.023,0-1.414S28.684,12.902,28.293,13.293z"
+                ></path>
+                <path
+                  style="fill:#546A79;"
+                  d="M30.29,11.29C30.11,11.479,30,11.74,30,12s0.11,0.52,0.29,0.71C30.48,12.89,30.74,13,31,13   c0.26,0,0.52-0.11,0.71-0.29C31.89,12.52,32,12.26,32,12s-0.11-0.521-0.29-0.7C31.34,10.92,30.66,10.92,30.29,11.29z"
+                ></path>
+                <path
+                  style="fill:#546A79;"
+                  d="M34.707,8.293c-0.391-0.391-1.023-0.391-1.414,0l-1,1c-0.391,0.391-0.391,1.023,0,1.414   C32.488,10.902,32.744,11,33,11s0.512-0.098,0.707-0.293l1-1C35.098,9.316,35.098,8.684,34.707,8.293z"
+                ></path>
+              </g>
+              <path style="fill:#38454F;" d="M32,4h-5c-0.552,0-1-0.447-1-1s0.448-1,1-1h5c0.552,0,1,0.447,1,1S32.552,4,32,4z"></path>
+              <line style="fill:none;stroke:#CBD4D8;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;" x1="13" y1="9" x2="13" y2="10"></line>
+              <line style="fill:none;stroke:#CBD4D8;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;" x1="13" y1="13" x2="13" y2="14"></line>
+              <line style="fill:none;stroke:#CBD4D8;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;" x1="13" y1="17" x2="13" y2="18"></line>
+              <circle style="fill:#CBD4D8;" cx="30" cy="54" r="3"></circle>
+            </svg>
+          </span>
+          <div class="flex flex-1 items-start flex-col">
+            <span class="font-medium text-base">3 sesiones en uno o varios Iphone</span>
+            <p class="text-foreground/70">IOS, Hace 5 días</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="p-6 w-full border rounded-2xl group border-border transition-colors duration-500 hover:bg-foreground/5">
+        <div class="flex items-center justify-start gap-4">
+          <span class="size-14 rounded-full flex-none inline-flex items-center justify-center bg-foreground/2 transition-colors duration-500 group-hover:bg-background">
+            <svg xmlns="http://www.w3.org/2000/svg" class="size-8" viewBox="0 0 24 24" fill="none">
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M16 6H13.4163H10.5837H8C5.17157 6 3.75736 6 2.87868 6.87868C2 7.75736 2 9.17157 2 12V16C2 18.8284 2 20.2426 2.87868 21.1213C3.75736 22 5.17157 22 8 22L16 22V6Z"
+                fill="#1C274C"></path>
+              <path
+                opacity="0.5"
+                d="M22 11.9998V15.9998C22 18.8282 22 20.2424 21.1213 21.1211C20.296 21.9464 18.9983 21.9966 16.5 21.9996H16V6H16.5C18.9983 6.00305 20.296 6.05318 21.1213 6.87848C22 7.75716 22 9.17138 22 11.9998Z"
+                fill="#1C274C"></path>
+              <path
+                opacity="0.5"
+                d="M13.4163 6.00011L15.5695 3.48811C15.839 3.17361 15.8026 2.70014 15.4881 2.43057C15.1736 2.161 14.7001 2.19743 14.4306 2.51192L12 5.34757L9.56946 2.51192C9.29989 2.19743 8.82641 2.16101 8.51192 2.43057C8.19743 2.70014 8.161 3.17361 8.43057 3.48811L10.5837 6.00011H13.4163Z"
+                fill="#1C274C"></path>
+              <path d="M19 11C19.5523 11 20 11.4477 20 12C20 12.5523 19.5523 13 19 13C18.4477 13 18 12.5523 18 12C18 11.4477 18.4477 11 19 11Z" fill="#1C274C"></path>
+              <path d="M19 15C19.5523 15 20 15.4477 20 16C20 16.5523 19.5523 17 19 17C18.4477 17 18 16.5523 18 16C18 15.4477 18.4477 15 19 15Z" fill="#1C274C"></path>
+            </svg>
+          </span>
+          <div class="flex flex-1 items-start flex-col">
+            <span class="font-medium text-base">3 sesiones en uno o varios en smart TV</span>
+            <p class="text-foreground/70">Televisión, Hace 1 semana</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="grid gap-1 mt-10">
+      <h2 class="font-medium text-base">Aplicaciones y servicios de terceros</h2>
+      <p class="text-foreground/60">Gestiona y controla tus conexiones de aplicaciones y servicios de terceros a tu cuenta de Google.</p>
+    </section>
+
+    <section class="w-full mt-4 grid gap-1">
+      <div class="p-6 w-full border rounded-2xl group border-border transition-colors duration-500 hover:bg-foreground/5">
+        <div class="flex items-center justify-start gap-4">
+          <img src="https://www.svgrepo.com/show/475679/skype-color.svg" alt="Chrome" class="size-10" />
+          <div class="flex flex-1 items-start flex-col">
+            <span class="font-medium text-base">Skype</span>
+            <p class="text-foreground/70">Acceso completo a la cuenta</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="p-6 w-full border rounded-2xl group border-border transition-colors duration-500 hover:bg-foreground/5">
+        <div class="flex items-center justify-start gap-4">
+          <img src="https://www.svgrepo.com/show/475640/chrome-color.svg" alt="Chrome" class="size-10" />
+          <div class="flex flex-1 items-start flex-col">
+            <span class="font-medium text-base">Google Chrome</span>
+            <p class="text-foreground/70">23 sesiones activas</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="p-6 w-full border rounded-2xl group border-border transition-colors duration-500 hover:bg-foreground/5">
+        <div class="flex items-center justify-start gap-4">
+          <img src="https://www.svgrepo.com/show/25172/dribbble.svg" alt="Chrome" class="size-10" />
+          <div class="flex flex-1 items-start flex-col">
+            <span class="font-medium text-base">Dribbble</span>
+            <p class="text-foreground/70">12 de marzo de 2024</p>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="p-6 w-full border rounded-2xl font-medium text-center cursor-pointer flex items-center justify-between border-border transition-colors duration-500 hover:bg-foreground/5"
+      >
+        <span> Ver todas las aplicaciones conectadas </span>
+        <span class="w-9 h-9 rounded-full inline-flex items-center text-sm font-medium justify-center bg-emerald-600 text-white">38</span>
+      </div>
+    </section>
+
+    <section class="grid gap-1 mt-10">
+      <div class="p-6 w-full border rounded-2xl gap-2 flex flex-col items-start border-border transition-colors duration-500 hover:bg-foreground/5">
+        <div class="w-full flex items-center justify-between">
+          <svg xmlns="http://www.w3.org/2000/svg" class="size-14" viewBox="0 0 24 24"
+            ><g fill="none"
+              ><path fill="url(#SVGZFAsATbD)" d="M12 2a4 4 0 0 0-4 4v1.5h1.5V6a2.5 2.5 0 0 1 5 0v1.5H16V6a4 4 0 0 0-4-4"></path><path
+                fill="url(#SVGWGGuSc4j)"
+                d="M20 10.25A3.25 3.25 0 0 0 16.75 7h-9.5A3.25 3.25 0 0 0 4 10.25v7.5A3.25 3.25 0 0 0 7.25 21h9.5A3.25 3.25 0 0 0 20 17.75z"></path><path
+                fill="url(#SVGM8vxsbDr)"
+                d="M12 15.5a1.5 1.5 0 1 0 0-3a1.5 1.5 0 0 0 0 3"></path><path
+                fill="url(#SVG6bc1Oc1J)"
+                d="M20 10.25A3.25 3.25 0 0 0 16.75 7h-9.5A3.25 3.25 0 0 0 4 10.25v7.5A3.25 3.25 0 0 0 7.25 21h9.5A3.25 3.25 0 0 0 20 17.75z"></path><path
+                fill="url(#SVG5D6cQZYG)"
+                d="M17.99 12.195c.652.65 1.907 1.685 3.449 1.898c.308.042.561.285.561.589v2.838c0 3.816-3.58 5.201-4.353 5.456a.46.46 0 0 1-.293 0C16.58 22.721 13 21.336 13 17.52v-2.838c0-.304.253-.547.561-.59c1.542-.212 2.797-1.247 3.45-1.898a.714.714 0 0 1 .979 0"
+              ></path><defs
+                ><linearGradient id="SVGZFAsATbD" x1="9.714" x2="15.835" y1=".949" y2="11.057" gradientUnits="userSpaceOnUse"
+                  ><stop stop-color="#ffc205"></stop><stop offset="1" stop-color="#fb5937"></stop></linearGradient
+                ><linearGradient id="SVGWGGuSc4j" x1="21.143" x2="6.542" y1="21.875" y2="8.278" gradientUnits="userSpaceOnUse"
+                  ><stop stop-color="#ff6f47"></stop><stop offset="1" stop-color="#ffcd0f"></stop></linearGradient
+                ><linearGradient id="SVG5D6cQZYG" x1="14.688" x2="23.007" y1="12" y2="21.767" gradientUnits="userSpaceOnUse"
+                  ><stop stop-color="#62be55"></stop><stop offset="1" stop-color="#1e794a"></stop></linearGradient
+                ><radialGradient id="SVGM8vxsbDr" cx="0" cy="0" r="1" gradientTransform="rotate(254.055 12.22 2.941)scale(5.46008 7.57586)" gradientUnits="userSpaceOnUse"
+                  ><stop stop-color="#944600"></stop><stop offset="1" stop-color="#cd8e02"></stop></radialGradient
+                ><radialGradient id="SVG6bc1Oc1J" cx="0" cy="0" r="1" gradientTransform="rotate(142.708 5.52 11.934)scale(6.46446 7.08296)" gradientUnits="userSpaceOnUse"
+                  ><stop stop-color="#eb4824"></stop><stop offset=".99" stop-color="#eb4824" stop-opacity="0"></stop></radialGradient
+                ></defs
+              ></g
+            ></svg
+          >
+          <div class="inline-flex items-center justify-center gap-2 pl-1 py-1 pr-2 rounded-full bg-blue-500/20 text-blue-600">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="flex-none" viewBox="0 0 24 24"
+              ><path
+                fill="currentColor"
+                fill-rule="evenodd"
+                d="M12 1.25C6.063 1.25 1.25 6.063 1.25 12S6.063 22.75 12 22.75S22.75 17.937 22.75 12S17.937 1.25 12 1.25M7.53 11.97a.75.75 0 0 0-1.06 1.06l3 3a.75.75 0 0 0 1.06 0l7-7a.75.75 0 0 0-1.06-1.06L10 14.44z"
+                clip-rule="evenodd"></path></svg
+            >
+            <span class="font-medium text-xs">Activada</span>
+          </div>
+        </div>
+        <div class="flex flex-1 items-start flex-col">
+          <span class="font-medium text-base">Navegación segura mejorada para tu cuenta</span>
+          <p class="text-foreground/70">Más protecciones personalizadas frente a descargas, extensiones y sitios web peligrosos.</p>
+        </div>
+      </div>
+
+      <div class="p-6 w-full border rounded-2xl gap-2 flex flex-col items-start border-border transition-colors duration-500 hover:bg-foreground/5">
+        <div class="w-full flex items-center justify-between">
+          <svg xmlns="http://www.w3.org/2000/svg" class="size-14" viewBox="0 0 24 24"
+            ><g fill="none"
+              ><path fill="#66e1ff" d="M12 22.998c6.074 0 10.999-4.925 10.999-11C22.999 5.926 18.074 1 12 1S1.001 5.925 1.001 11.999S5.926 22.998 12 22.998"></path><path
+                fill="#c2f3ff"
+                d="M4.314 14.87a11 11 0 0 1 16.398-9.584A11 11 0 1 0 6.601 21.583a10.95 10.95 0 0 1-2.287-6.713"></path><path
+                stroke="#191919"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m2.338 17.261l7.75.001M2.925 5.784h18.157m-10.038 5.739H1.01m10.395 11.462A10.999 10.999 0 1 1 23 11.523"
+                stroke-width="1"></path><path
+                stroke="#191919"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M11.3 1.028c-5.738 6.217-5.634 14.306.105 21.958m1.293-21.958a15.32 15.32 0 0 1 4.147 8.588"
+                stroke-width="1"></path><path fill="#e3e3e3" d="M16.81 21.143a4.331 4.331 0 1 0 0-8.662a4.331 4.331 0 0 0 0 8.662"></path><path
+                fill="#fff"
+                d="M13.748 19.875a4.331 4.331 0 0 1 6.12-6.122z"></path><path
+                stroke="#191919"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M16.81 21.143a4.331 4.331 0 1 0 0-8.662a4.331 4.331 0 0 0 0 8.662M22.999 23l-3.106-3.106"
+                stroke-width="1"></path></g
+            ></svg
+          >
+          <div class="inline-flex items-center justify-center gap-2 pl-1 py-1 pr-2 rounded-full bg-blue-500/20 text-blue-600">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="flex-none" viewBox="0 0 24 24"
+              ><path
+                fill="currentColor"
+                fill-rule="evenodd"
+                d="M12 1.25C6.063 1.25 1.25 6.063 1.25 12S6.063 22.75 12 22.75S22.75 17.937 22.75 12S17.937 1.25 12 1.25M7.53 11.97a.75.75 0 0 0-1.06 1.06l3 3a.75.75 0 0 0 1.06 0l7-7a.75.75 0 0 0-1.06-1.06L10 14.44z"
+                clip-rule="evenodd"></path></svg
+            >
+            <span class="font-medium text-xs">Activada</span>
+          </div>
+        </div>
+        <div class="flex flex-1 items-start flex-col">
+          <span class="font-medium text-base">Informe de dark web</span>
+          <p class="text-foreground/70">Recibirás alertas e instrucciones cuando tu información se encuentre en la dark web.</p>
         </div>
       </div>
     </section>
